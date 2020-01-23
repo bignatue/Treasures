@@ -1,6 +1,5 @@
 # TREASURES
-
-## Building mobile friendly web page.
+##### Building mobile friendly web page.
 
 ## Font Type (From Google Fonts):
 ##### SirinStencil
