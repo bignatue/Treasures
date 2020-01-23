@@ -1,0 +1,460 @@
+/**
+  Author: Brian Bantigue
+  Date Build: January 22 2020
+  Title: Responsive Web Page
+  Description: Build responsive design for JunoCollege task
+  Demo Link: https://bpbantigue.com/projects/treasures/
+*/
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth; 
+}
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+section {
+  display: block;
+  padding: 0 10%;
+}
+
+/** BACKGROUND COLORS */
+.mostly-black {
+  background-color: #222428;
+}
+.dark-blue {
+  background-color: #00476A;
+}
+.pure-cyan {
+  background-color: #00C6FF;
+}
+.light-grayish {
+  background-color: #F2DCD9;
+}
+.very-dark {
+  background-color: #0E191E;
+}
+.white {
+  background-color: #fff;
+}
+
+/** BACKGROUND COLORS */
+.text-white {
+  color: #fff;
+}
+
+/** MARGINS */
+.my-1 {
+  margin: 1em auto;
+}
+.mt-0 {
+  margin-top: 0;
+}
+.mb-1 {
+  margin-bottom: 1em;
+}
+.mb-1p5 {
+  margin-bottom: 1.5em;
+}
+.mb-2 {
+  margin-bottom: 2em;
+}
+.mb-3 {
+  margin-bottom: 3em;
+}
+.mb-5 {
+  margin-bottom: 5em;
+}
+
+/** PADDINGS */
+.pt-5 {
+  padding-top: 5em;
+}
+.pt-4 {
+  padding-top: 4em;
+}
+.pt-3 {
+  padding-top: 3em;
+}
+.pt-2 {
+  padding-top: 2em;
+}
+.pt-1 {
+  padding-top: 1em;
+}
+.pb-2 {
+  padding-bottom: 5em;
+}
+.pb-5 {
+  padding-bottom: 5em;
+}
+.py-5 {
+  padding-top: 2.5em;
+  padding-bottom: 5em;
+}
+
+.row {
+  display: block;
+}
+
+.grid-input {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+
+.col-6 {
+  display: flex;
+  flex-direction: column;
+}
+.col-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  width: 100%;
+  display: inline-block;
+  padding: 2em 1em;
+  margin-bottom: 2em;
+}
+::placeholder {
+  color: #fff;
+}
+
+.headings {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-family: 'Sirin Stencil', cursive;
+}
+
+/** TEXT COLORS */
+.text-center {
+  text-align: center;
+}
+.text-blue {
+  color: #00476A;
+}
+
+.btn {
+  padding: .4em 1em;
+  font-size: 25px;
+  font-weight: 400;
+  text-decoration: none;
+  border: 2px solid #00476A;
+  font-family: 'Lato', sans-serif;
+}
+.btn:hover{
+  color: #00476A;
+  background: none;
+  border: 1px solid #00C6FF;
+}
+
+.underline {
+  width: 80px;
+  border: none;
+  border-bottom: 2px solid #00C6FF;
+}
+
+.img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/** HEADER SECTION */
+
+.feature {
+  height: 100vh;
+  padding-top: 1em;
+  padding-bottom: 10em;
+  background: url(img/header.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+
+.header {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3em;
+  justify-content: space-between;
+  position: fixed;
+}
+
+nav {
+  padding: 15px;
+}
+
+.nav-link {
+  padding: 1em .8em .5em .2em;
+  font-size: 25px;
+  margin-left: 1em;
+  font-weight: 400;
+  color: #00476A;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+.nav-link:hover, .active{
+  border-bottom: 1px solid #00C6FF;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: 400;
+  color: #222428;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Sirin Stencil', cursive;
+}
+
+.headline {
+  margin: 12% 0 0;
+}
+
+.headline h1 {
+  color: #00476A;
+  font-size: 76px;
+  font-weight: 400;
+  line-height: 80px;
+  text-transform: uppercase;
+  font-family: 'Sirin Stencil', cursive;
+}
+
+
+/** ADVENTURES */
+.adventure {
+  padding-top: 5em;
+  padding-bottom: 15%;
+  background-color: #E6F8FC;
+}
+.grid-adventures {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3em;
+}
+.grid-adventures .img {
+  border-radius: 50%;
+}
+.grid-adventures .col-6 {
+  position: absolute;
+}
+.grid-adventures .h3 { 
+  padding: .5em 1em; 
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  color: #fff;
+  background: #232428;
+  position: absolute;
+  bottom: 10%;
+}
+
+/** BLOG POST */
+.blog-post {
+  padding-top: 2.5em;
+  padding-bottom: 5em;
+}
+.blog-post h4 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+/* Slideshow container */
+.slider-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Slides */
+.mySlides { 
+  padding: 0 80px;
+  text-align: center;
+}
+.mySlides p {
+  display: block;
+  margin: 0 1em 2em 1em;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -60px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 35px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+}
+.prev {
+  left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: #00476A;
+}
+
+/** DRAGON BASE SECTION */
+.dragon-vase {
+  padding-bottom: 5em;
+}
+.dragonvase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.dragonvase-grid .col-6:nth-of-type(2) {
+  padding: 2.5em;
+  display: block;
+}
+
+.dragonvase-grid p {
+  margin-bottom: 2em;
+}
+.img-vase {
+  width: 80%;
+  margin-top: -6em;
+  margin-bottom: 3em;
+  align-self: center; 
+  box-shadow: 2.5em 2.5em #B2E4ED;
+}
+
+/** CONTACT US */
+.contact-us .form-control {
+  background: transparent;
+  border: 1px solid #00C6FF;
+}
+
+/** FOOTER */
+footer h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 25px;
+  padding: 1em ;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: 'Sirin Stencil', cursive;
+}
+
+
+/** MOBILE DESIGN */
+@media(max-width: 768px) {
+  .headings {
+    margin: .5em auto;
+  }
+  .grid-input {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
+  
+  /** HEADER SECTION */
+.feature {
+  padding-top: .5em;
+  padding-bottom: 5em;
+}
+  .header {
+    margin-bottom: 0em;
+  }
+  .nav-link {
+    display: none;
+  }
+  .headline {
+    width: 70%;
+    margin: 5em 0 3em;
+  }
+  .headline h1{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 45px;
+  }
+  
+  /** LATEST BLOG */
+  section.blog-post {
+    padding: 1em 1em 3em;
+  }
+  .slider-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /** FEATURE */
+  
+.feature {
+  height: 90vh;
+}
+
+  .grid-adventures {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .mySlides {
+    padding: 0 30px;
+  }
+
+  /** ADVENTURES */
+  .adventure {
+    padding-top: 1em; 
+    padding-bottom: 25%;
+  }
+  .adventure .headings {
+    margin: 1em;
+  }
+  .grid-adventures {
+    grid-gap: 1em;
+  }
+  .grid-adventures .col-3 {
+    position: relative;
+    text-align: center;
+  }
+  .grid-adventures .h3 {
+    font-size: 25px;
+    top: -20px; 
+    font-size: 25px; 
+    width: 150px!important; 
+    position: relative;
+    margin: 0 auto;
+  }
+
+  /** DRAGON VASE */
+  .dragonvase-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .dragonvase-grid .col-6:nth-of-type(1) {
+    margin-bottom: 2em;
+  }
+  .dragonvase-grid .col-6:nth-of-type(2) {
+    padding: 1em;
+    text-align: center;
+  }
+  .img-vase {
+    width: 80%;
+    margin-top: -5em;
+    margin-bottom: 1em;
+    box-shadow: 2em 2em #B2E4ED;
+  }
+  footer h3 {
+    padding: .5em ;
+    font-size: 30px;
+  }
+}

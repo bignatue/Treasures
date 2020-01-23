@@ -1,0 +1,231 @@
+/**
+  Author: Brian Bantigue
+  Date Build: January 22 2020
+  Title: Responsive Web Page
+  Description: Build with Bootstrap Framework for JunoCollege task
+  Demo Link: https://bpbantigue.com/projects/treasures/
+*/
+
+:root {
+  --very-dark-blue: #0E191E;
+  --dark-blue: #00476A;
+  --pure-cyan: #00C6FF;
+  --light-graying-red: #F2DCD9;
+  --dark-brown: #222428;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  font-family: 'Lato', sans-serif;
+}
+
+.container-fluid {
+  padding: 0;
+}
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.display-4 {
+  color: var(--dark-blue);
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: 'Sirin Stencil', cursive;
+}
+
+.btn {
+  border-radius: 0;
+  border: 1px solid var(--dark-blue);
+  background-color: var(--dark-blue);
+}
+.btn:hover {
+  background: none;
+  color: var(--dark-blue);
+  border: 1px solid var(--pure-cyan);
+}
+.form-control {
+  border-radius: 0;
+  background: none;
+  border: 1px solid var(--pure-cyan);
+}
+.form-control:focus {
+  background: none;
+}
+
+.underline {
+  width: 80px;
+  border: none;
+  border-bottom: 2px solid #00C6FF;
+}
+
+/**  FEATURE SECTION */ 
+.feature-section {
+  background: url(img/header.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.feature-section .navbar-brand {
+  font-size: 35px;
+  font-weight: 400;
+  color: var(--very-dark-blue);
+  font-family: 'Sirin Stencil', cursive!important;
+}
+.feature-section .nav-link {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 1em;
+  color: var(--dark-blue)!important;
+}
+.feature-section .nav-link:hover, .feature-section .nav-link.active {
+  border-bottom: 1px solid var(--pure-cyan);
+}
+.feature-section .feature-content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.feature-section .display-3 {
+  font-size: 76px;
+  font-weight: 400;
+  color: var(--dark-blue);
+  font-family: 'Sirin Stencil', cursive!important;
+}
+
+/** BLOG SECTION */
+.blog-section .h2 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+}
+.blog-section .carousel-control-prev-icon {
+  height: 40px!important;
+  width: 40px !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.blog-section .carousel-control-next-icon {
+  height: 40px!important;
+    width: 40px !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.blog-section .carousel-caption {
+  bottom: auto;
+}
+.blog-section .carousel-caption p {
+  font-size: 18px;
+  color: var(--dark-brown);
+}
+.item {
+  height: 300px;
+}
+
+/** ADVENTURE SECTION */
+.adventure-section {
+  height: 100vh;
+  background-color: #E6F8FC;
+}
+.adventure-section .h3 {
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+  top: 70%;
+  font-size: 25px;
+  padding: .5em 1em;
+  color: #fff;
+  background-color: var(--dark-brown);
+}
+.adventure-section img {
+  width: 90%;
+  border-radius: 50%;
+}
+
+/** VASE */
+.vase-section {
+  height: 100vh;
+}
+.vase-section .img-fluid {
+  position: absolute;
+  margin-top: -10em;
+  width: 80%; 
+  box-shadow: 2.5em 2.5em #B2E4ED;
+}
+
+/** CONTACT */
+.contact-section {
+  background-color: var(--dark-brown);
+}
+.contact-section .btn{
+  color: #fff;
+  background-color: var(--dark-blue);
+}
+.contact-section .btn:hover{
+  color: var(--pure-cyan);
+  background: none;
+  border: 1px solid var(--pure-cyan);
+}
+
+/** FOOTER */
+.footer-section {
+  background-color: var(--very-dark-blue);
+}
+
+/** MODILE DESIGN */
+@media(max-width: 768px) {
+  .feature-section .display-3{
+    font-size: 50px;
+    width: 80%;
+  }
+  
+.display-4 {
+  font-size: 30px;
+}
+  .feature-section .feature-content {
+    height: 70vh;
+  }
+  .item {
+    height: 450px;
+  }
+
+  /** BLOG */
+  .blog-section .content {
+    width: 100%;
+  }
+  
+.blog-section .carousel-control-prev-icon, 
+.blog-section .carousel-control-next-icon  {
+  height: 25px!important;
+  width: 25px !important;
+  margin-top: -100px;
+}
+/** ADVENTURE */
+  .adventure-section {
+    padding: 0;
+    height: auto;
+    text-align: center;
+  }
+  .adventure-section .col-md-4 {
+    margin-bottom: 1em;
+  }
+  .adventure-section .h3 {
+    width: 150px!important;
+    position: relative; 
+    top: -5%;
+    font-size: 25px; 
+  }
+  .adventure-section img {
+    width: 80%; 
+  } 
+  /** VASE */ 
+  .vase-section {
+    height: auto;
+    text-align: center; 
+  } 
+  .vase-section .img-fluid {
+    position: relative; 
+    margin-top: -8em;
+    margin-bottom: 2em;
+  }
+}
