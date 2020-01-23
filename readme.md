@@ -17,4 +17,4 @@
 ##### Body text: 20px / 400 regular / Lato
 
 ## Demo
-### - <a href="https://bpbantigue.com/projects/treasures/index.html" target="_blank">Treasures"</a>
+##### <a href="https://bpbantigue.com/projects/treasures/index.html" target="_blank">Treasures"</a>
