@@ -1,11 +1,11 @@
 # TREASURES
 ##### Building mobile friendly web page.
 
-## Font Type (From Google Fonts):
+#### Font Type (From Google Fonts):
 ##### SirinStencil
 ##### Lato
 
-## Font Size/Weight/Font:
+#### Font Size/Weight/Font:
 ##### Note: Font sizes are just for reference, you may adjust sizing to match design as needed*
 ##### Logo (Treasurie): 35px / 400 regular / Lato
 ##### Nav and Button : 25px / 400 regular / Lato
